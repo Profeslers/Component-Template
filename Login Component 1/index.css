@@ -1,0 +1,570 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
+  text-decoration: none;
+}
+
+body
+{
+  display: grid;
+  background: #111;
+  min-height: 100vh;
+  padding: rem;
+  place-items: center;
+}
+
+.signup-form-container
+{
+  display: flex;
+  background-color: white;
+  padding: 4rem 2rem;
+  flex-direction: column;
+  width: 531px;
+  gap: 1rem;
+  position: absolute;
+}
+
+.signup-stage
+{
+  position: absolute;
+  color: #4B4B4B;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+.signup-form-header
+{
+  display: flex;
+  max-width: 360px;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.signup-title
+{
+  font-weight: 300;
+}
+
+.signup-subtitle
+{
+  color: #292929;
+}
+
+.signin-link
+{
+  font-weight: 600;
+  color: black;
+}
+
+.signup-form
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-container
+{
+  border: 1px solid #9C9C9C;
+  position: relative;
+  width: 100%;
+  border-radius: 100vmax;
+  padding: 1rem;
+}
+
+.signup-input
+{
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
+
+.arrow
+{
+  background: green;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  border-radius: 100vmax;
+}
+
+.signup-checkbox-container
+{
+  /* display: flex; */
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.signup-policy
+{
+  font-size: 14px;
+}
+
+.signup-next-btn
+{
+  border: none;
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 14px;
+  border-radius: 100vmax;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: min(90%, 300px);
+  font-weight: 600;
+}
+
+.leftcolumn
+{
+  float: left;
+  width: 40%;
+  transform: translate(0, .5rem)
+}
+
+.midcolumn
+{
+  width: 6%;
+  padding: 0 2rem 0 1rem;
+  ;
+}
+
+.rightcolumn
+{
+  float: left;
+  width: 40%;
+  transform: translate(0, .5rem)
+}
+
+.hr
+{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.signIn
+{
+  position: absolute;
+  width: 130px;
+  height: 23px;
+  left: 38px;
+  top: 337px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 23px;
+  letter-spacing: 0.09em;
+  text-transform: capitalize;
+  color: #070707;
+}
+
+.signInColL
+{
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+.signInColR
+{
+  width: 20%;
+  float: right;
+  margin-top: 2rem;
+}
+
+.stepSpan
+{
+  position: absoluteppas;
+  font-size: 1rem;
+}
+
+.forgot
+{
+  width: 100%;
+}
+
+button
+{
+  width: 8rem;
+  height: 3rem;
+  border-radius: 2rem;
+  /* background: black; */
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  float: right;
+}
+
+.buttonG
+{
+  border: 1px solid #9C9C9C;
+  position: relative;
+  width: 100%;
+  border-radius: 100vmax;
+  padding: .2rem;
+  background: white;
+  justify-content: center;
+  color: black;
+  font-size: 1rem;
+}
+
+.imgBtn
+{
+  margin-bottom: 1rem;
+}
+
+.buttonLabel
+{
+  margin-bottom: 1rem;
+}
+
+.signUp
+{
+  height: 54px;
+  width: 130px;
+}
+
+.signUp2
+{
+  height: 54px;
+  width: 130px;
+}
+
+.appleBtn
+{
+  position: absolute;
+  width: 480px;
+  height: 65px;
+  left: 24px;
+  top: 165px;
+}
+
+.button-input-A{
+  box-sizing: border-box;
+  background: #fff;
+  position: absolute;
+  width: 452px;
+  height: 55px;
+  left: 14px;
+  top: 5px;
+  border: 0.5px solid #151515;
+  border-radius: 57px;
+}
+
+.imgBtnA
+{
+  width: 21px;
+  height: 21px;
+  left: 168px;
+  top: 21px;
+}
+
+.AppleLogin{
+  width: 123px;
+  height: 23px;
+  left: 30px;
+  top: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 275;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #151515;
+}
+
+.GoogleLogin{
+  position: absolute;
+  width: 138px;
+  height: 23px;
+  left: 27px;
+  top: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 275;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #151515;
+}
+
+.imgBtnG
+{
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 0px;
+  top: 0px;
+}
+
+.googleWrapper{
+  position: absolute;
+  width: 152px;
+  height: 23px;
+  left: 145px;
+  top: 21px;
+}
+
+.button-input-G
+{
+  box-sizing: border-box;
+  background: #fff;
+  position: absolute;
+  width: 452px;
+  height: 56px;
+  left: 14px;
+  top: 5px;
+  border: 0.5px solid #151515;
+  border-radius: 57px;
+}
+
+.googleBtn
+{
+  position: absolute;
+  width: 480px;
+  height: 65px;
+  left: 24px;
+  top: 83px;
+}
+
+.signup-form-container
+{
+  position: absolute;
+  width: 531px;
+  height: 609px;
+  left: 682px;
+  top: 185px;
+}
+
+.closeX
+{
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  right: 34px;
+  top: 21px;
+
+  background: url(image.png);
+}
+
+
+
+/* 1/2 step */
+
+
+.step
+{
+  position: absolute;
+  width: 54px;
+  height: 17px;
+  right: 41px;
+  top: 343px;
+  color: rgba(150, 150, 150, 1);
+
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+}
+
+.inputBot
+{
+  /* Email / UserName */
+
+
+  position: absolute;
+  width: 134px;
+  height: 23px;
+  left: 53px;
+  bottom: 143px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  /* identical to box height, or 164% */
+
+  letter-spacing: 0.04em;
+
+  color: #B7B7B7;
+
+}
+
+.inputClass
+{
+  position: absolute;
+  width: 300px;
+  height: 0px;
+  left: 38px;
+  bottom: 130px;
+
+}
+
+.or
+{
+  position: absolute;
+  width: 19px;
+  height: 23px;
+  left: 260px;
+  top: 272px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 275;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height, or 128% */
+
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+
+  color: #151515;
+
+}
+
+.rHr
+{
+  /* Line 4 */
+
+
+  position: absolute;
+  width: 208px;
+  height: 0px;
+  left: 298px;
+  top: 284px;
+
+  border: 0.4px solid #151515;
+}
+
+.lHr
+{
+  /* Line 4 */
+
+
+  position: absolute;
+  width: 208px;
+  height: 0px;
+  left: 29px;
+  top: 284px;
+
+  border: 0.4px solid #151515;
+}
+
+
+.nextBtn
+{
+  /* Rectangle 17 */
+
+
+  position: absolute;
+  width: 126px;
+  height: 43px;
+  left: 364px;
+  top: 431px;
+
+  background: #070707;
+  color: #fff;
+  border-radius: 40px;
+}
+
+.signUp
+{
+  position: absolute;
+  width: 243px;
+  height: 23px;
+  left: 38px;
+  bottom: 209px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  /* identical to box height, or 164% */
+
+  letter-spacing: 0.04em;
+
+  color: #6D6D6D;
+
+
+}
+
+.signUp2
+{
+
+
+  color: rgba(0, 0, 0, 0.98);
+}
+
+.forgotPasswordL
+{
+  position: absolute;
+  width: 117px;
+  height: 17px;
+  left: 38px;
+  bottom: 106px;
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+
+  color: #474747;
+
+}
+
+a
+{
+  text-decoration: none;
+  color: #474747;
+}
+
+input:is([type="button"], [type="submit"], [type="reset"]),
+input[type="file"]::file-selector-button,
+button
+{
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  color: buttontext;
+  padding-top: 2px;
+  padding-right: 6px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-top-color: #070707;
+  border-right-color: buttonface;
+  border-bottom-color: buttonface;
+  border-left-color: buttonface;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  background-color: buttonface;
+  box-sizing: border-box;
+}
