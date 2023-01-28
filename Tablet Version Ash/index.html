@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -22,9 +22,24 @@
       <h2>Get Started</h2>
       <p>Create a new account or log in already created</p>
       <div class="button-wrapper">
-        <button>😍 Google Login</button>
-        <button>🍎 Apple Login</button>
+        <button class="button-outline">
+          <img src="./assets/google.png" />
+          <span> Google Login </span>
+        </button>
+        <button class="button-outline">
+          <img src="./assets/apple-logo.png" />
+          <span> Apple Login</span>
+        </button>
       </div>
+      <div class="horizontal-rule">
+        <span>or</span>
+      </div>
+      <div class="button-wrapper">
+        <button class="button-black">Create a New Account</button>
+        <p class="sign-up">Do you have account?</p>
+        <button class="button-black">Sign In</button>
+      </div>
+      <p class="footer-privacy">Privacy Policy</p>
     </main>
   </body>
 </html>
