@@ -37,6 +37,7 @@ body {
   background-repeat: no-repeat;
   max-width: 834px;
   height: 1194px;
+  font-family: var(--default-font-family);
 }
 /*
   6. Improve media defaults
@@ -111,7 +112,6 @@ h6 {
 }
 
 h2 {
-  font-family: var(--default-font-family);
   text-transform: uppercase;
   font-weight: 400;
   font-size: 33px;
@@ -119,7 +119,6 @@ h2 {
 }
 
 p {
-  font-family: var(--default-font-family);
   font-weight: 400;
   text-transform: uppercase;
   max-width: 300px;
@@ -137,4 +136,81 @@ p {
 
 button {
   display: flex;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 430px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+  font-size: 21px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.button-outline {
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.button-outline img {
+  width: 23px;
+}
+
+.button-outline span {
+  margin-left: 0.9rem;
+}
+
+.button-black {
+  display: flex;
+  color: #ffffff;
+  background-color: #070707;
+  font-weight: 300;
+  font-size: 19px;
+  margin: 0;
+}
+
+.sign-up {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 0 0 4px 0;
+  text-transform: none;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.horizontal-rule {
+  position: relative; /* so we can position the pseudo-elements */
+  margin: 2.2rem 0;
+  margin-bottom: 3.2rem;
+  padding: 0 20px;
+  font-size: 20px;
+  color: #000;
+}
+
+.horizontal-rule::before,
+.horizontal-rule::after {
+  content: "";
+  position: absolute; /* position them on top of the text */
+  top: 50%; /* center them vertically */
+  width: 39%; /* they should be half the width of the parent */
+  border-bottom: 0.2px solid #000; /* add the horizontal rule effect */
+}
+
+.horizontal-rule::before {
+  left: 2rem; /* position the left line on the left side */
+}
+
+.horizontal-rule::after {
+  right: 2rem; /* position the right line on the right side */
+}
+
+.footer-privacy {
+  text-transform: none;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+  margin-top: 6.5rem;
+  font-weight: 200;
+  font-size: 20px;
+  color: #767676;
 }
